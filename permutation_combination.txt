@@ -1,0 +1,25 @@
+itertools — Functions creating iterators for efficient looping — Python 3.12.6 documentation 
+ 
+
+itertools.accumulate(iterable[, function, *, initial=None]) 
+
+ 
+
+https://docs.python.org/3/library/itertools.html#itertools.accumulate 
+
+ 
+
+Make an iterator that returns accumulated sums or accumulated results from other binary functions. 
+
+The function defaults to addition. The function should accept two arguments, an accumulated total and a value from the iterable. 
+
+If an initial value is provided, the accumulation will start with that value and the output will have one more element than the input iterable. 
+
+The function argument can be set to min() for a running minimum, max() for a running maximum, or operator.mul() for a running product. Amortization tables can be built by accumulating interest and applying payments: 
+
+Important functions for selecting some pattern (with /without ordering and repeatition or not) 
+
+
+https://docs.python.org/3/library/functools.html 
+
+ 
